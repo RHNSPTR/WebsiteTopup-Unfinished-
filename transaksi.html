@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Up Mobile Legends - GamerPay.id</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">GamerPay<span>.id</span></a>
+            <nav>
+                <a href="#">Lacak Pesanan</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container transaction-page">
+            <div class="transaction-header">
+                <img src="assets/img/logo_ml.png" alt="Mobile Legends Logo">
+                <h2>Top Up Mobile Legends</h2>
+                <p>Proses Cepat via User ID</p>
+            </div>
+
+            <div class="transaction-steps">
+                <div class="step-card">
+                    <h3><span>1</span>Masukkan Data Akun</h3>
+                    <div class="input-group">
+                        <input type="text" id="userId" placeholder="Masukkan User ID">
+                        <input type="text" id="zoneId" placeholder="Zone ID">
+                    </div>
+                    <small>Untuk menemukan User ID Anda, klik foto profil Anda di pojok kiri atas layar game.</small>
+                </div>
+
+                <div class="step-card">
+    <h3><span>2</span>Pilih Nominal</h3>
+    <div class="item-grid" id="nominal-grid">
+        <div class="item" data-name="86 Diamonds" data-price="20000">
+            <span class="item-name">86 Diamonds</span>
+            <span class="item-price">Rp 20.000</span>
+        </div>
+        <div class="item" data-name="172 Diamonds" data-price="40000">
+            <span class="item-name">172 Diamonds</span>
+            <span class="item-price">Rp 40.000</span>
+        </div>
+        <div class="item" data-name="257 Diamonds" data-price="60000">
+            <span class="item-name">257 Diamonds</span>
+            <span class="item-price">Rp 60.000</span>
+        </div>
+        <div class="item" data-name="706 Diamonds" data-price="165000">
+            <span class="item-name">706 Diamonds</span>
+            <span class="item-price">Rp 165.000</span>
+        </div>
+        <div class="item" data-name="1412 Diamonds" data-price="330000">
+            <span class="item-name">1412 Diamonds</span>
+            <span class="item-price">Rp 330.000</span>
+        </div>
+        <div class="item" data-name="2195 Diamonds" data-price="500000">
+            <span class="item-name">2195 Diamonds</span>
+            <span class="item-price">Rp 500.000</span>
+        </div>
+    </div>
+</div>
+
+                <div class="step-card">
+                    <h3><span>3</span>Pilih Metode Pembayaran</h3>
+                    <div class="item-grid" id="payment-grid">
+                        <div class="item" data-name="QRIS">QRIS</div>
+                        <div class="item" data-name="GoPay">GoPay</div>
+                        <div class="item" data-name="OVO">OVO</div>
+                        <div class="item" data-name="DANA">DANA</div>
+                        <div class="item" data-name="Virtual Account">Virtual Account</div>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <h3><span>4</span>Beli!</h3>
+                    <p>Masukkan nomor WhatsApp Anda untuk menerima notifikasi pesanan.</p>
+                    <div class="input-group">
+                         <input type="tel" id="whatsapp" placeholder="Contoh: 081234567890">
+                    </div>
+                    <button id="buy-button">Beli Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 GamerPay.id. Semua hak cipta dilindungi.</p>
+    </footer>
+    
+    <div id="confirmation-modal" class="modal-overlay">
+        <div class="modal-content">
+            <h3>Konfirmasi Pesanan</h3>
+            <div id="modal-summary"></div>
+            <div class="modal-buttons">
+                <button id="confirm-purchase">Ya, Lanjutkan</button>
+                <button id="cancel-purchase">Batal</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
